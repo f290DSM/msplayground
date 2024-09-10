@@ -101,7 +101,27 @@ public class MsclientesApplication {
 
 5. Acesse a url `http://localhost:8761` no navegador e verifique se a instancia de `msclientes` foi registrada no **Eureka Server**.
 
-## To be continue...
+## Concluimos o nosso primeiro Design Pattern para Microservices, o Serice Discovery.
+
+### Conectando microservices 
+
+Agora que voce já verificou a conexão do `msclientes` ao `Eureka`, vamos conectar mais 2 instancias do `msclientes` à ele.
+
+Execute os comandos abaixo.
+
+#### Windows a partir do diretorio do msclientes
+
+1. Segunda instância.
+```shell
+.\gradlew bootRun
+```
+
+2. Terceira instância.
+```shell
+.\gradlew bootRun
+```
+
+3. Verifique o status do `Eureka Server` com as 3 isntâncias on-line.
 
 
 
