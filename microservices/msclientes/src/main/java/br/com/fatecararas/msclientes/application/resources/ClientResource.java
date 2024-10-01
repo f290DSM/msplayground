@@ -35,6 +35,7 @@ public class ClientResource {
         return ResponseEntity.created(uri).build();
     }
 
+    @GetMapping
     public ResponseEntity<?> getByCpf(@RequestParam("cpf") String cpf) {
         Optional<Cliente> optional = service.getByCPF(cpf);
         if(optional.isEmpty()) {
